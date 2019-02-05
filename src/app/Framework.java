@@ -20,7 +20,7 @@ public class Framework {
 	public void setUp()
 	{
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "res/chromedriver.exe");
 		driver = new ChromeDriver();
     }
 	
@@ -73,6 +73,7 @@ public class Framework {
 	
 	public void close()
 	{
+		System.out.println("Test Passed");
 		driver.close();
 	}
 	
